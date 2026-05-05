@@ -11,6 +11,9 @@ This lists various services that provide free access or credits towards API-base
 > [!TIP]
 > Rate limits and free tiers change frequently. Always check the provider's official documentation for the most up-to-date information.
 
+> [!NOTE]
+> Last verified: check individual provider links for current status. Some free tiers may require a credit card on file even if not charged.
+
 {{TOC}}
 
 ## Free Providers
