@@ -399,6 +399,7 @@ Extremely restrictive input/output token limits.
 - deepseek-ai/DeepSeek-V3.2
 - google/gemma-3-12b-it
 - minimaxai/minimax-m2.5
+- minimaxai/minimax-m2.7
 - openai/gpt-oss-120b
 
 ### [Scaleway Generative APIs](https://console.scaleway.com/generative-api/models)
