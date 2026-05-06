@@ -14,6 +14,9 @@ This lists various services that provide free access or credits towards API-base
 > [!NOTE]
 > Last verified: check individual provider links for current status. Some free tiers may require a credit card on file even if not charged.
 
+> [!NOTE]
+> Personal fork: I use this list primarily for hobby projects and local tooling. If you found this via search, the upstream repo at [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) is likely more up to date.
+
 {{TOC}}
 
 ## Free Providers
