@@ -18,7 +18,7 @@ This lists various services that provide free access or credits towards API-base
 > Personal fork: I use this list primarily for hobby projects and local tooling. If you found this via search, the upstream repo at [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) is likely more up to date.
 
 > [!NOTE]
-> Models marked with ⭐ are ones I've personally found useful for hobby projects.
+> Models marked with ⭐ are ones I've personally found useful for hobby projects. Models marked with 🚫 are ones I've had reliability issues with.
 
 {{TOC}}
 
