@@ -86,43 +86,12 @@ def build_provider_table(providers: list[Provider]) -> str:
 def render_template(template: str, providers: list[Provider]) -> str:
     """Render the README template with provider data."""
     # Build individual provider sections
+    # Sort providers alphabetically by name for consistent ordering
+    sorted_providers = sorted(providers, key=lambda p: (p.name or "").lower())
+
     provider_sections = "\n---\n\n".join(
-        format_provider_section(p) for p in providers
+        format_provider_section(p) for p in sorted_providers
     )
 
     # Build summary table
-    provider_table = build_provider_table(providers)
-
-    # Timestamp
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
-    rendered = template
-    rendered = rendered.replace("{{PROVIDER_TABLE}}", provider_table)
-    rendered = rendered.replace("{{PROVIDER_SECTIONS}}", provider_sections)
-    rendered = rendered.replace("{{LAST_UPDATED}}", timestamp)
-    rendered = rendered.replace("{{PROVIDER_COUNT}}", str(len(providers)))
-
-    return rendered
-
-
-def main() -> None:
-    """Main entry point for README generation."""
-    if not TEMPLATE_PATH.exists():
-        print(f"ERROR: Template not found at {TEMPLATE_PATH}", file=sys.stderr)
-        sys.exit(1)
-
-    template_content = TEMPLATE_PATH.read_text(encoding="utf-8")
-
-    providers = PROVIDERS
-    if not providers:
-        print("WARNING: No providers found in data.py", file=sys.stderr)
-
-    readme_content = render_template(template_content, providers)
-
-    OUTPUT_PATH.write_text(readme_content, encoding="utf-8")
-    print(f"README.md generated successfully ({len(providers)} providers).")
-    print(f"Output: {OUTPUT_PATH}")
-
-
-if __name__ == "__main__":
-    main()
+    provide
